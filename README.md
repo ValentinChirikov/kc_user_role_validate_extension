@@ -1,6 +1,9 @@
 User role validation (initially forked from keycloak\examples\providers\authenticator)
 ========================
 
+Example authentication flow:
+![Authentication flow](auth_flow.jpg "Authentication flow")
+
 1. Build a package with :
 mvn clean package
 
