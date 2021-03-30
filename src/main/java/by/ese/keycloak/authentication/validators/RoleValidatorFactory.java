@@ -24,7 +24,9 @@ public class RoleValidatorFactory implements AuthenticatorFactory, DisplayTypeAu
     static {
         commonConfig = Collections.unmodifiableList(ProviderConfigurationBuilder.create()
             .property().name(USER_ROLE).label("User role")
-            .helpText("Role the user must have to execute this flow. Click 'Select Role' button to browse roles, or just type it in the textbox. To specify an application role the syntax is appname.approle, i.e. myapp.myrole")
+            .helpText("Role the user must have to execute this flow. Click 'Select Role' button to browse roles, " +
+                    "or just type it in the textbox. To specify an application role the syntax is appname.approle, " +
+                    "i.e. myapp.myrole")
             .type(ProviderConfigProperty.ROLE_TYPE).add()
             .build()
         );
